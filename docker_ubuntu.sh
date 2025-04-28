@@ -21,3 +21,6 @@ systemctl enable docker
 # Step 7: Add current user to Docker group
 usermod -aG docker $USER
 echo "Docker installation complete. Please log out and back in for group changes to take effect."
+
+# docker test web 80
+docker run -d -p 80:80 -p 443:443 --name nginx
